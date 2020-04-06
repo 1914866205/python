@@ -33,7 +33,7 @@ def main():
     # 检查字符串是否以数字和字母构成
     print(str2.isalnum())
 
-    str3 = '  hello@126.com'
+    str3 = 'hello@126.com'
     print(str3)
     # 获得字符串修剪左右两侧空格后的拷贝
     print(str3.strip())
