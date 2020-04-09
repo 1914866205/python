@@ -3,7 +3,6 @@
 """
 
 
-from pyecharts import charts
 
 
 class Student(object):
@@ -43,6 +42,7 @@ if __name__ == '__main__':
 """
 使用oycharts绘制仪表盘
 """
+from pyecharts import charts
 
 # 仪表盘
 gauge = charts.Gauge()
