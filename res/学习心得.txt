@@ -1,0 +1,120 @@
+
+
+导航栏可以用粘性定位(吸顶容器)
+	position: -webkit-sticky;
+        position: sticky;
+	top:0;
+	z-index:100
+
+        /*z-index 属性设置元素的堆叠顺序。
+        拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。
+         注释:元素可拥有负的 z-index 属性值*/
+
+即使窗口是滚动的它也不会移动：
+    position:fixed;
+
+&:hover{
+   -webkit-transform:scale(1.2);  1.2倍放大
+  transform:scale(1.2);
+  transition:all 1s ease 0s;
+  z-index:10;
+	
+}
+
+外边距 margin
+内边距 padding
+
+块级元素(block)特性：
+    总是独占一行，表现为另起一行开始，而且其后的元素也必须另起一行显示;
+    宽度(width)、高度(height)、内边距(padding)和外边距(margin)都可控制;
+
+内联元素(inline)特性：
+    和相邻的内联元素在同一行;
+    宽度(width)、高度(height)、内边距的top/bottom(padding-top/padding-bottom)和外边距的top/bottom(margin-top/margin-bottom)都不可改变，就是里面文字或图片的大小;
+
+1.HTML常用标签的分类（块级、行内块级、行内）
+	块标签：包含p、div、ul、ol、li、dl、dt、dd、h1~h6、form；
+		特点：独占一行，对高度、宽度、行高以及顶和底边距都可设置的属性值生效			；如果不给宽度，块级元素就默认为浏览器的宽度，即就是100%宽；
+	行内标签：包含a、span、em、strong、b、i、u、label、br；	
+		特点：可以多个标签存在一行，不能直接设置行内标签的高度、宽度、行高以			及顶和底边距，完全靠内容撑开宽高！
+	行内块标签：img,input,textarea
+		特点：结合的行内和块级的有点，不仅可以对宽高属性值生效，还可以多个标			签存在一行显示
+	各种标签之间的转换
+	1、块级标签转换为行内标签：display:inline;
+	2、行内标签转换为块级标签：display:block;
+	3、转换为行内块标签：display：inline-block;
+
+
+2.流式布局
+3.position、display的属性及用法
+4.margin和padding（box-sizing）
+4.flex布局
+	display:
+		flex  默认行方向
+	flex-wrap:wrap 可换行
+	flex-direction
+	
+5.自适应页面样式的写法和注意点
+	自适应父容器
+		flex:1 1 auto
+	不拉伸	flex-grow:0
+	拉伸	flex-grow:1
+	不缩小	flex-shrink:0
+	缩小	flex-shrink:1
+1. 百分比
+2. 父相子绝
+3. 合理嵌套
+4.尽量复用
+
+主轴对齐方式
+		justify-content:space-around 均分
+				center    居中
+				space-between 两边对齐
+副轴对齐方式
+		 align-items: baseline 基线对齐
+				stretch 拉伸统一高度对齐
+
+
+栅格布局  12个
+	display:flex  默认行方向
+	flex-wrap:wrap 可换行
+	flex:0 0 占一行的总百分比
+自适应宽度的flex元素
+	flex:1 1 总百分比
+
+offset 重点
+	设置与左右元素的外边距
+	margin-left:(+/-)百分比/auto	
+	设置与左右元素的内边距
+	padding-left:(+/-)百分比/auto
+
+边框圆矩效果	border-radius 0-50%
+边框		border:1px solid 颜色
+只有下边框	border-bottom:1px solid 颜色
+
+字体：font-size: 字体大小
+      font-weight:字体宽度
+
+链接手型 cursor:pointer
+	
+
+超出文本四行省略
+   text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+
+吸底
+.sticky-bar {
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+  动态样式绑定  如果cur==index  添加class  active		
+	:class="{active:cur==index}
+
+                <li v-for="(元素,下标)in 数组"@click="change(index)":class="{active:cur==index}":key="index">{{item}}</li>
+              
