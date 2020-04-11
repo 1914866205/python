@@ -9,7 +9,6 @@ import time
 
 def crawl():
     followers_data = []
-    i = 0
     for offset in range(2500, 3000, 20):
         time.sleep(1)
         url = "https://www.zhihu.com/api/v4/columns/powertrain/followers?include=data%5B*%5D.follower_count%2Cgender%2Cis_followed%2Cis_following&offset=" + \
