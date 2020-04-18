@@ -27,7 +27,8 @@ def crawl(a):
 def data_insert():
     # 打开数据库连接
     db = pymysql.connect("localhost", "ntt", ".15252205596xin", "db_python")
-    for i in range(157009499, 13109499, -3):
+    # for i in range(157009499, 13109499, -3):
+    for i in range(156971702, 13109499, -3):
         # 使用cursor()方块创建一个游标对象 cursor
 
         cursor = db.cursor()
