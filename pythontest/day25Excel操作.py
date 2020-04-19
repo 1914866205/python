@@ -51,6 +51,6 @@ cell4 = sheet1.col(2)[1].value
 print(cell4)
 
 # 5.日期类型
-# data_value = xlrd.xldate_as_datetime(
-#     sheet1.cell_value(6, 2), workbook.datemode)
-# print(type(data_value), data_value)
+data_value = xlrd.xldate_as_datetime(
+    sheet1.cell_value(6, 2), workbook.datemode)
+print(type(data_value), data_value)
