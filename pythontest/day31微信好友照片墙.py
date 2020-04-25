@@ -50,9 +50,9 @@ def picture_wall():
         if x >= numLine:
             x = 0
             y += 1
-            newImg.save('./res/all.png')
+            newImg.save('./res/allwechat.png')
 
 
 if __name__ == '__main__':
-    # wechat_friend_avatar()
+    wechat_friend_avatar()
     picture_wall()
