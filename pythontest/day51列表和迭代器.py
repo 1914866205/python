@@ -1,6 +1,8 @@
+#coding=utf-8
 """
 列表和迭代器
 """
+
 from collections.abc import Iterator
 
 # 列表 a 不是迭代器类型
