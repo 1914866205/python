@@ -1,5 +1,4 @@
 # 区别于实例2的python蟒蛇
-
 import turtle
 
 turtle.setup(650, 360, 200, 200)
