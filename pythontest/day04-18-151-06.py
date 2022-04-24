@@ -1,0 +1,12 @@
+from datetime import date
+birthday=date(1999,5,27)
+print(birthday.year)
+print(birthday.month)
+print(birthday.day)
+print(birthday.isoformat())
+print(birthday.isoweekday())
+print(birthday.strftime("%Y-%m-%d"))
+print(birthday.strftime("%Y-%B-%d"))
+print(birthday.strftime("%Y-%B-%d-%A"))
+print(birthday.strftime("%Y-%B-%d-%a"))
+print("生日是{0:%Y}年{0:%m}月{0:%d}日".format(birthday))

@@ -7,7 +7,7 @@ w = wordcloud.WordCloud(
     height=400,
     background_color='#6c909e',
     colormap='GnBu',
-    font_path='./res/font/SimHei.ttf'
+    font_path='D:\CompcuteApplication\projectTest\pythonTest\\res\\font\SimHei.ttf'
 )
 
 # 调用jieba的Lcut()方法对原始文本进行中文分词，得到string
@@ -39,4 +39,4 @@ string = " ".join(txtlist)
 # 将string变量传入w的generate()方法，给词云输入文字
 w.generate(string)
 # 将词云图片导出到当前文件夹
-w.to_file('./res/img/output4.png')
+w.to_file('D:\CompcuteApplication\projectTest\pythonTest\\res\\img\\output4.png')

@@ -1,5 +1,4 @@
 from  random import randint
-import sys
 try:
     num = int(input("请输入一个1-99数字"))
 except:
