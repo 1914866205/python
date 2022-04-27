@@ -1,5 +1,4 @@
-"id","name","u
-rl","gender","avatar_url","follower_count"
+"id","name","url","gender","avatar_url","follower_count"
 "4919adc8ec822870bb999f0824258117","三千千千千","http://www.zhihu.com/api/v4/people/4919adc8ec822870bb999f0824258117","-1","https://pic4.zhimg.com/da8e974dc_is.jpg","0"
 "ead76deccd66eb49e9e431362ec87fc9","雁翎刀","http://www.zhihu.com/api/v4/people/ead76deccd66eb49e9e431362ec87fc9","-1","https://pic2.zhimg.com/0d0e8b160c05a8f50c3a6e210e85b4a2_is.jpg","20"
 "d753b611601784dc087b104d48d9b19f","做自己的摆渡人","http://www.zhihu.com/api/v4/people/d753b611601784dc087b104d48d9b19f","-1","https://pic4.zhimg.com/da8e974dc_is.jpg","1"
