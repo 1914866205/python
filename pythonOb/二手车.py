@@ -15,7 +15,8 @@ resp = f.read()
 # 网页源代码 (文本显示)
 # print(resp.text)
 # 用BeautifulSoup解析数据  python3 必须传入参数二'html.parser' 得到一个对象，接下来获取对象的相关属性
-html = BeautifulSoup(resp, 'html.parser')
+# html = BeautifulSoup(resp, 'html.parser')
+html = BeautifulSoup(resp, 'html.parser', from_encoding='gbk')
 
 # 解析返回的数据
 csvfile = open(r'D:\360MoveData\Users\lenovo\Desktop\data.csv',
@@ -25,7 +26,8 @@ keys = ['车型', '信息', '价格']
 writer.writerow(keys)
 
 i = 1
-lis = html.findAll(class_='cards-li list-photo-li')
+# lis = html.findAll(class_='cards-li list-photo-li')
+lis = html.findAll(class_='cards-bottom')
 for li in lis:
     carType = li.h4.text
     carInfo = li.p.text

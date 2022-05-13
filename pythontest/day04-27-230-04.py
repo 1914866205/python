@@ -5,6 +5,8 @@ ls = []
 for line in fr:
     line = line.replace("\n", "")
     ls.append(line.split(','))
+    print(ls)
+
 fr.close()
 fw = open("D:\CompcuteApplication\projectTest\pythonTest\\res\csv\CSV使用中文字符解析data.csv", "w")
 for i in range(1, len(ls)):

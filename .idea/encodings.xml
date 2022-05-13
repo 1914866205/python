@@ -2,5 +2,6 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/res/data.csv" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/txt/《三国演义》.txt" charset="GBK" />
   </component>
 </project>
