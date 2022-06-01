@@ -16,7 +16,7 @@ def robotana(url, urlwant, strin):
     rp.set_url(url)
     rp.read()
     if rp.can_fetch("*", urlwant) == True:
-        print('robots 协议未禁止')
+        print('robots协议未禁止')
         backhtml('http://' + urlwant)
     else:
         print("十分抱歉，对方网页禁止了您的访问；请看以下规则")
@@ -29,7 +29,8 @@ roboturl = 'http://' + realurl + '/robots.txt'
 robotread = requests.get(roboturl)
 robotread.encoding = robotread.apparent_encoding
 if robotread.status_code != 200:
-    print('您爬取的网站没有设置 robots 规则，正在返回网页源代码')
+    print('您爬取的网站没有设置robots规则，正在返回网页源代码')
     backhtml('http://' + url)
 else:
     print("正在分析规则..")
+    robotana(roboturl, url, robotread.text)

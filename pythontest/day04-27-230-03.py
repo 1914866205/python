@@ -28,6 +28,7 @@ def main():
         txt += '\n'
     # 最終输出的文件
     fo = open("D:\CompcuteApplication\projectTest\pythonTest\\res\img\\中文字符画test.txt", "w")
+    print(txt)
     fo.write(txt)
     fo.close()
 

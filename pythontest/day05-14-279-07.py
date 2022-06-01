@@ -2,7 +2,7 @@ import requests
 import time
 
 
-def showBaidu():
+def visitBaidu():
     url = 'https://www.baidu.com/'
     count = 0
     fail = 0
@@ -17,7 +17,6 @@ def showBaidu():
         except:
             fail += 1
             continue
-    print('30 秒内，访问百度{}次成功 {}次失败'.format(count, fail))
+    print('30秒内，访问百度{}次成功{}次失败'.format(count, fail))
 
-
-showBaidu()
+visitBaidu()

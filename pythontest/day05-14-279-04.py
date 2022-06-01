@@ -18,7 +18,8 @@ def analyseTXT(url, text):
         if sub[j][:9] == 'Disallow:':
             string = url + sub[j][10:]
     print(string)
-    url = 'https://www.baidu.com'
-    robots = '/robots.txt'
-    text = getRobotTXT(url + robots)
-    analyseTXT(url, text)
+url = 'https://www.baidu.com'
+robots = '/robots.txt'
+text = getRobotTXT(url + robots)
+analyseTXT(url, text)
+
